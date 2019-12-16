@@ -37,20 +37,27 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    padding-bottom: 3em;
   }
-  .container .section .right-side img {
+  .container .section .right-side .images {
+    width: 70vw;
+  }
+  .container .section .right-side .images img {
     margin-top: 1em;
-    width: 30%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    display: none;
+    width: 40%;
+    margin: auto;
   }
   .container .section .right-side .btn {
     font-size: 1rem;
   }
-  .btn {
-    display: none;
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 50vw;
+    margin-left: 3em;
+    margin-bottom: 3em;
   }
 }
 /*# sourceMappingURL=index-max420.css.map */

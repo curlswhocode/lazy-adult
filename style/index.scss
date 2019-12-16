@@ -97,7 +97,7 @@ header {
 }
 
 .sectiondots {
-  position: absolute;
+  position: fixed;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
@@ -152,25 +152,35 @@ header {
   box-shadow: -9px 9px 0px 0px white;
 }
 .nav-open {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 50vh;
-  background-color: white;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background-color: rgba(250, 250, 250, 1);
+  overflow-x: hidden;
+  transition: 0.3s ease-in-out;
   z-index: 100000;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-  transform: translateY(-100%);
   a {
     color: #18065f;
     font-size: 1.7rem;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
+    padding: 1.3em;
+    width: 100%;
+    text-align: center;
     &:hover {
-      background-color: #ffafc2;
+      background-color: #f0f0f0;
       color: #4820ea;
     }
   }
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
 }

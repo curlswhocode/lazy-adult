@@ -135,7 +135,7 @@ header .logo {
 }
 
 .sectiondots {
-  position: absolute;
+  position: fixed;
   right: 5%;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -230,12 +230,15 @@ header .logo {
 }
 
 .nav-open {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 50vh;
-  background-color: white;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   z-index: 100000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,18 +252,27 @@ header .logo {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
 }
 
 .nav-open a {
   color: #18065f;
   font-size: 1.7rem;
   text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 1.3em;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-open a:hover {
-  background-color: #ffafc2;
+  background-color: #f0f0f0;
   color: #4820ea;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=index.css.map */

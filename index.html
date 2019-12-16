@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/index-max420.css">
     <title>Document</title>
   </head>
   <body>
-    <section class="container cntnr1">
+    <section class="container cntnr1" id="1">
       <header>
         <h3 class="logo">internetmom.</h3>
-        <svg width="53" height="36" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu">
+        <svg width="53" height="36" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu" onclick="openNav()">
             <line y1="2.5" x2="48" y2="2.5" stroke="white" stroke-width="5" />
             <line y1="12.5" x2="32" y2="12.5" stroke="white" stroke-width="5" />
             <line y1="22.5" x2="20" y2="22.5" stroke="white" stroke-width="5" />
         </svg>
 
         <nav class="nav-open">
+            <a href="#" onclick="closeNav()" class="closemenu">&times;</a>
           <a href="#">home</a>
           <a href="#">moving out</a>
           <a href="#">recipes</a>
           <a href="#">personal help</a>
         </nav>
       </header>
-      <section class="section landing">
+      <section class="section landing" >
         <section class="innertxt">
           <h1>So you’re a shitty adult.</h1>
           <h2>
@@ -52,7 +54,7 @@
     </section>
     </section>
     <section class="container cntnr2">
-        <section class="section section2">
+        <section class="section section2" id="2">
             <section class="innertxt">
                 <h1>Moving on.</h1>
                 <h2>
@@ -82,7 +84,7 @@
         </section>
     </section>
     <section class="container cntnr3">
-        <section class="section section2">
+        <section class="section section3" id="3">
             <section class="innertxt">
                 <h1>Let's eat.</h1>
                 <h2>
@@ -111,24 +113,35 @@
         <div class="page-1">
             <h3>01</h3>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="slide active">
-                <circle cx="6" cy="6" r="6" fill="pink" / >
+                <a href="#1"><circle cx="6" cy="6" r="6" fill="pink" / ></a>
             </svg>
         </div>
         <div class="page-2">
             <h3>02</h3>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="slide">
-                <circle cx="6" cy="6" r="6" fill="pink" / >
+                <a href="#2"><circle cx="6" cy="6" r="6" fill="pink" / ></circle></a>
             </svg>
         </div>
         <div class="page-3">
             <h3>03</h3>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="slide">
-                <circle cx="6" cy="6" r="6" fill="pink" />
+            <a href="#3"> <circle cx="6" cy="6" r="6" fill="pink" /></a>
             </svg>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
     <script src="js/index.js"></script>
+    <script>function openNav() {
+            document.querySelector(".nav-open").style.width = "35vw";
+        }
+
+        function closeNav() {
+            document.querySelector(".nav-open").style.width = "0";
+        }</script>
 </body>
 </html>

@@ -30,6 +30,7 @@ function wrapper() {
   //       .fromTo(currentLeftSide, 0.3, { y: "10%" }, { y: "-100%" })
   //       .fromTo(currentRightSide, 0.3, { y: "10%" }, { y: "-100%" }, "-=0.2");
   //   }
+  function menu() {}
 }
 
 wrapper();

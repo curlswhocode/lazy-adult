@@ -62,5 +62,10 @@
   .buttons .btn {
     font-size: 1rem;
   }
+  .nav-open {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=index-max420.css.map */

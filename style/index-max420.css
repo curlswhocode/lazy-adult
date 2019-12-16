@@ -48,7 +48,7 @@
     margin: auto;
   }
   .container .section .right-side .btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .buttons {
     -webkit-box-orient: vertical;
@@ -58,6 +58,9 @@
     width: 50vw;
     margin-left: 3em;
     margin-bottom: 3em;
+  }
+  .buttons .btn {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=index-max420.css.map */
